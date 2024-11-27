@@ -2,6 +2,11 @@
 
 Welcome to **Hangman: Guess the Programming Languages**! This is a simple yet fun game where you try to guess programming languages based on a hidden word. The game follows the classic rules of Hangman, and you can play directly in your browser.
 
+## Built With
+
+- **React** for the user interface and game logic.
+- **Tailwind CSS** for styling the layout and design.
+
 ## Screenshots
 
 ### Game Started
