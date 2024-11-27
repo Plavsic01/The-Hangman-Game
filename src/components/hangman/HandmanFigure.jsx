@@ -13,7 +13,7 @@ const HangmanFigure = (props) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="200"
-      height="300"
+      height="250"
       viewBox="0 0 200 300"
       fill="none"
       stroke="white"

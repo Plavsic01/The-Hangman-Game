@@ -1,10 +1,11 @@
 import './App.css';
 import Keyboard from './components/keyboard/Keyboard';
-import Header from './components/header/Header';
 import Hangman from './components/hangman/Hangman';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+
 import { useState } from 'react';
 
-const englishAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 const guessWords = [
   'Python',
   'JavaScript',
@@ -64,11 +65,11 @@ const App = () => {
         gameOver={handleGameOver}
       />
       <Keyboard
-        alphabet={englishAlphabet}
         getLetter={handleUserGuess}
         reset={handleResetHangman}
         isGameOver={gameOver}
       />
+      <Footer />
     </>
   );
 };

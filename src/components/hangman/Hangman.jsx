@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import HangmanFigure from './HandmanFigure';
 import Button from '../ui/button/Button';
+
 const Hangman = (props) => {
   const [foundLetters, setFoundLetters] = useState({});
   const [numberOfMistakes, setNumberOfMistakes] = useState(0);
@@ -27,7 +28,6 @@ const Hangman = (props) => {
 
   useEffect(() => {
     if (checkIfGameOver()) {
-      console.log('GAME OVER');
       props.gameOver();
     }
   }, [foundLetters, numberOfMistakes]);
@@ -84,10 +84,18 @@ const Hangman = (props) => {
       />
 
       {gameOver.isGameOver && gameOver.hasWon && (
-        <h1 className="text-white">GG You won!</h1>
+        <h1 className="text-white press-start-2p-regular">🥳 GG You won!</h1>
       )}
       {gameOver.isGameOver && !gameOver.hasWon && (
-        <h1 className="text-white">Better luck next time!</h1>
+        <div className="text-center">
+          <h1 className="text-white press-start-2p-regular">
+            🥺 Better luck next time!
+          </h1>
+
+          <h1 className="text-white press-start-2p-regular">
+            Word was: "{props.wordToGuess}"
+          </h1>
+        </div>
       )}
 
       <div>
