@@ -44,7 +44,7 @@ Welcome to **Hangman: Guess the Programming Languages**! This is a simple yet fu
 To play or contribute to the game, clone the repository to your local machine:
 
 ```bash
-https://github.com/Plavsic01/The-Hangman-Game.git
+git clone https://github.com/Plavsic01/The-Hangman-Game.git
 ```
 
 ### Run the Game Locally
